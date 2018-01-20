@@ -1,0 +1,207 @@
+{
+    "auth": {
+      "agree": "موافقم با",
+      "alreadyJoined": "حساب کاربری دارید ؟",
+      "createAccount": "ساخت حساب کاربری",
+      "createNewAccount": "ساخت حساب کاربری",
+      "email": "ایمیل",
+      "login": "ورود",
+      "password": "رمز عبور",
+      "signUp": "ثبت نام",
+      "termsOfUse": "قوانین استفاده",
+      "welcome": "خوش آمدید!"
+    },
+    "buttons": {
+      "advanced": "آیکن‌ها،گروه‌ها،",
+      "button": "کلید",
+      "colors": "رنگ‌ها",
+      "disabled": "غیرفعال کردن",
+      "dropdown": "دراپ‌دون",
+      "hover": "هاور",
+      "main": "کلید‌های اولیه و ثانویه",
+      "micro": "میکرو",
+      "pressed": "زده شده",
+      "small": "کوچک"
+    },
+    "charts": {
+      "horizontalBarChart": "نمودار افقی",
+      "verticalBarChart": "نمودار عمودی",
+      "lineChart": "نمودار خطی",
+      "pieChart": "نمودار پای",
+      "donutChart": "نمودار دونات",
+      "bubbleChart": "نمودار حبابی"
+    },
+    "dashboard": {
+      "dataVisualization": "نمایش اطلاعات",
+      "elements": "المنت‌ها",
+      "features": "ویژگی‌ها",
+      "setupProfile": "ساخت پروفایل",
+      "teamMembers": "اعضای تیم",
+      "usersAndMembers": "کاربران و اعضا",
+      "versions": "ورژن"
+    },
+    "extra": {
+      "alerts": {
+        "title": "هشدار",
+        "success": "موفق",
+        "successMessage": "شما با موفقیت این هشدار را مشاهده کردید",
+        "info": "اطلاعات",
+        "infoMessage":
+          "این هشدار توجه شما را جلب کرد ولی زیاد مهم نیست  :)",
+        "warning": "هشدار",
+        "warningMessage": "بهتره حواست به خودت باشه!زیاد هم جذاب نیستی!",
+        "danger": "خطر",
+        "dangerMessage": "یه چیزی رو سعی کن تغییر بدی و دوباره ارسال کنی!"
+      },
+      "tabs": {
+        "title": "تب‌ها",
+        "maps": "نقشه",
+        "overview": "کلیات",
+        "setupProfile": "ساخت پروفایل"
+      },
+      "chat": "چت",
+      "profileCard": "کارت پروفایل"
+    },
+    "forms": {
+      "controls": {
+        "female": "خانم",
+        "male": "اقا",
+        "title": "کلید ، سوویچ ",
+        "radioDisabled": "رادیویی غیر فعال شده",
+        "radio": "رادیو",
+        "subscribe": "عضور کانال روزنامه شدن"
+      },
+      "inputs": {
+        "emailValidatedSuccess": "ایمیل(با موفقیت تایید شد(",
+        "emailValidated": "ایمیل(تایید شده(",
+        "inputWithIcon": "ورودی با آیکن",
+        "inputWithButton": "ورودی با کلید",
+        "inputWithClearButton": "ورودی با کلید کلیر",
+        "inputWithRoundButton": "ورودی با کلید گوشه دار",
+        "textInput": "ورودی متن",
+        "textInputWithDescription": "ورودی متن با توضیحات",
+        "textArea": "ورودی متن",
+        "title": "ورودی‌ها",
+        "upload": "باگذاری"
+      },
+      "mediumEditor": {
+        "title": "Medium Editor"
+      },
+      "selects": {
+        "country": "انتخاب کشور",
+        "countryMulti": "انتخاب چند کشور",
+        "multi": "چند انتخابی",
+        "simple": "انتخاب ساده",
+        "title": "انتخاب‌ها"
+      },
+      "wizard": {
+        "name": "نام",
+        "completed": "ویزارد تکمیل شد",
+        "confirmSelection": "انتخاب تاییدیه",
+        "rich": "پایان ویزارد",
+        "simple": "ویزارد ساده",
+        "stepOne": "مرحله ۱. نام",
+        "stepTwo": "مرحله ۲.کشور",
+        "stepThree": "مرحله ۳. تاییدیه",
+        "verticalRich": "ویزارد افقی",
+        "verticalSimple": "ویزارد ساده عمودی"
+      }
+    },
+    "grid": {
+      "desktop": "شبکه دسکتاپ",
+      "fixed": "شبکه ثابت",
+      "offsets": "فاصله",
+      "responsive": "شبکه متغیر"
+    },
+    "icons": {
+      "back": "برگشت به آیکن‌ها",
+      "none": "هیچ آیکنی یافت نشد",
+      "search": "جستجوی آیکن",
+      "title": "آیکن‌ها"
+    },
+    "spinners": {
+      "title": "اسپینر ",
+      "poweredBy": "قدرت گرفته از"
+    },
+    "language": {
+      "english": "انگلیسی",
+      "spanish": "اسپانیای",
+      "persian":"فارسی"
+    },
+    "menu": {
+      "auth": "احراز حویت",
+      "buttons": "کلیدها",
+      "charts": "نمودارها",
+      "dashboard": "داشبورد",
+      "extra": "اضافی",
+      "formElements": "المنت‌های فرم",
+      "forms": "فرم‌ها",
+      "formWizards": "فرم ویزارد",
+      "mediumEditor": "Medium Editor",
+      "grid": "شبکه",
+      "icons": "آیکن‌ها",
+      "spinners": "اسپینرها",
+      "login": "ورود",
+      "maps": "نقشه",
+      "modals": "مودال",
+      "progressBars": "زمانبند",
+      "signUp": "ثبت‌نام",
+      "statistics": "گزارش‌ها",
+      "tables": "جداول",
+      "typography": "تایپوگرافی",
+      "uiElements": "UI Elements"
+    },
+    "messages": {
+      "all": "مشاهده تمام پیام‌ها",
+      "new": " {name} پیام جدید از طرف "
+    },
+    "modal": {
+      "cancel": "لفو",
+      "close": "بستن",
+      "confirm": "تایید",
+      "large": "بزرگ",
+      "largeTitle": "مودال بزرگ",
+      "medium": "متوسط",
+      "mediumTitle": "مودال متوسط",
+      "small": "کوچک",
+      "smallTitle": "مودال کوچک",
+      "static": "ثابت",
+      "staticMessage":
+        "این یک مودال ثابت است با کلید برگشت حذف نخواهد شد",
+      "staticTitle": "مودال ثابت",
+      "title": "مودال‌ها"
+    },
+    "notifications": {
+      "all": "مشاهده تمامی نوتیفیکیشن‌ها",
+      "sentMessage": "یک پیام برای شما ارسال کرده است {name}",
+      "uploadedZip": "آپلود کرده{type} یک فایل با تایپ {name}",
+      "startedTopic": " {name} یک تاپیک جدید را باز کرده است"
+    },
+    "progressBars": {
+      "basic": "پایه",
+      "basicVertical": "افقی پایه",
+      "circle": "دایره",
+      "colorFulTitle": "ستون رنگی",
+      "thin": "نازک",
+      "thinVertical": "افقی نازک",
+      "thick": "نازک",
+      "title": "پراگرس"
+    },
+    "tables": {
+      "basic": "جدول پایه",
+      "styled": "رنگ‌ها،آیکن‌ها",
+      "advanced": "جستجو و صفحه بندی",
+      "headings": {
+        "city": "شهر",
+        "email": "ایمیل",
+        "name": "نام",
+        "score": "امتیاز"
+      }
+    },
+    "user": {
+      "language": "تغییر زبان",
+      "logout": "خروج",
+      "profile": "پروفایل من"
+    }
+  }
+  
