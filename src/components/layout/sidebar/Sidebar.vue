@@ -11,15 +11,17 @@
             v-if="item.path">
             <i class="sidebar-menu-item-icon" v-bind:class="item.meta.iconClass"></i>
             {{item.meta.title | translate}}
+            
           </router-link>
           <a href="#"
              @click.prevent="toggleMenuItem(item)"
              class="sidebar-link"
              v-bind:class="{expanded: item.meta.expanded}"
              v-else>
-            <i class="sidebar-menu-item-icon" v-bind:class="item.meta.iconClass"></i>
+            <i class="sidebar-menu-item-icon" v-bind:class="item.meta.iconClass"></i> 
             {{item.meta.title | translate}}
             <i class="expand-icon fa fa-angle-down"></i>
+            
           </a>
           <expanding>
             <ul class="sidebar-submenu in" v-show="item.meta.expanded">
@@ -103,9 +105,10 @@
 @import "../../../../node_modules/bootstrap/scss/variables";
 
 .sidebar {
+  direction: rtl;
   @include media-breakpoint-down(md) {
     top: $sidebar-mobile-top;
-    left: $sidebar-mobile-left;
+    right: $sidebar-mobile-left;
     width: $sidebar-mobile-width;
     z-index: $sidebar-mobile-z-index;
   }
@@ -124,7 +127,7 @@
   position: absolute;
   width: $sidebar-width;
   top: $sidebar-top;
-  left: $sidebar-left;
+  right: $sidebar-left;
   transition: all 0.2s ease;
   opacity: 1;
 
@@ -147,13 +150,14 @@
   .sidebar-link {
     position: relative;
     height: $sidebar-link-height;
-    padding-left: $sidebar-link-pl;
+    padding-right: $sidebar-link-pl;
+    // left:$sidebar-link-pl;
     display: flex;
     flex-direction: row;
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-
+    
     &.router-link-active,
     &:hover {
       color: $white;
@@ -165,9 +169,10 @@
       }
     }
 
+
     .expand-icon {
       position: absolute;
-      right: $sidebar-arrow-right;
+      left: $sidebar-arrow-right;
       top: calc(50% - #{$font-size-root}/2);
       font-weight: bold;
       transition: transform 0.3s ease;
@@ -182,7 +187,7 @@
     .sidebar-menu-item-icon {
       font-size: $sidebar-menu-item-icon-size;
       color: $vue-green;
-      margin-right: 14px;
+      margin-left: 14px;
 
       &.fa-dashboard {
         /* Temp fix */
@@ -199,17 +204,18 @@
   .sidebar-menu,
   .sidebar-submenu {
     list-style: none;
-    padding-left: 0;
+    padding-right: 0;
 
     li {
       display: block;
       padding-left: 0;
     }
+    
   }
 
   .sidebar-submenu {
     .sidebar-link {
-      padding-left: $sidebar-submenu-link-pl;
+      padding-right: $sidebar-submenu-link-pl;
       font-size: $font-size-smaller;
     }
   }

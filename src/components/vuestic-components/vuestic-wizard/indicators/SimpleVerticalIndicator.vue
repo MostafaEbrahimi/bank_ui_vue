@@ -66,7 +66,7 @@
       position: absolute;
       height:  100%;
       width:  2px;
-      left:  0;
+      right:  0;
       top: -50%;
       background-color: $lighter-gray;
       transition: background-color 300ms linear;
@@ -84,9 +84,9 @@
       background-color: $lighter-gray;
       border-radius: 50%;
       position:  absolute;
-      left:  0;
+      right:  0;
       top: calc(50% - #{$wizard-step-indicator-height}/2);
-      margin-left:  -7px;
+      margin-right:  -7px;
       bottom:  5px;
       z-index: 1;
       transition: background-color 300ms linear;
@@ -96,10 +96,10 @@
     .wizard-step-label{
       color:  $lighter-gray;
       display: inline-block;
-      width: $wizard-label-width;
+      // width: $wizard-label-width;
       font-size: $wizard-step-label-font-size;
       font-weight: bold;
-      margin-left: $wizard-step-label-m-l;
+      margin-right: $wizard-step-label-m-l;
       transition: color 300ms linear;
     }
 

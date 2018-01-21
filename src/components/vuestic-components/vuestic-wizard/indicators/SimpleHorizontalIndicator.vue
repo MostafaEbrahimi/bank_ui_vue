@@ -60,7 +60,7 @@
     .wizard-step-line{
       position: absolute;
       width:  100%;
-      left:  -50%;
+      right:  -50%;
       bottom:  12px;
       height:  2px;
       background-color: $lighter-gray;
@@ -69,7 +69,7 @@
       &.completed-line {
         display: none;
         width: 50%;
-        left: 50%
+        right: 50%
       }
     }
 
@@ -81,8 +81,8 @@
       background-color: $lighter-gray;
       border-radius: 50%;
       position:  absolute;
-      left:  50%;
-      margin-left:  -7px;
+      right:  50%;
+      margin-right:  -7px;
       bottom:  5px;
       z-index: 1;
       transition: background-color 300ms linear;
@@ -110,7 +110,7 @@
     &:first-child {
       .wizard-step-line {
         width: 50%;
-        left: 0;
+        right: 0;
       }
     }
 

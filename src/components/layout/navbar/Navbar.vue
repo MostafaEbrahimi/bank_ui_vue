@@ -85,6 +85,11 @@
               <button class="btn btn-info" @click="setLanguage('es')">
                 {{'language.spanish' | translate}}
               </button>
+              <hr>
+              <button class="btn btn-info" @click="setLanguage('fa')">
+                {{'language.persian' | translate}}
+              </button>
+
       </div>
     </vuestic-modal>
   </nav>
@@ -135,6 +140,7 @@
   @import "../../../../node_modules/bootstrap/scss/variables";
 
   .navbar.app-navbar {
+    direction: rtl;
     .navbar-container {
       width: 100%;
       height: 100%;
@@ -142,8 +148,8 @@
     }
 
     height: $top-nav-height;
-    padding-left: $nav-padding-left;
-    padding-right: $nav-padding-right;
+    padding-right: $nav-padding-left;
+    padding-left: $nav-padding-right;
     background-color: $top-nav-bg;
 
     .avatar-container {
@@ -170,7 +176,7 @@
       position: absolute;
       z-index: 3;
       height: 100%;
-      left: $navbar-brand-container-left;
+      right: $navbar-brand-container-left;
       top: 0;
     }
 
@@ -190,8 +196,8 @@
       &.show {
         @include media-breakpoint-up(lg) {
           .dropdown-menu {
-            left: auto;
-            right: 0;
+            right: auto;
+            left: 0;
           }
         }
         &:after {
@@ -218,8 +224,8 @@
       .dropdown-item {
         height: $navbar-dd-item-height;
         cursor: pointer;
-        font-size: $font-size-base;
-
+        font-size: $font-size-mini;
+        font-family: 'IRANSans_Light';
         &:hover, &:active, &:focus, &.active {
           outline: none;
         }

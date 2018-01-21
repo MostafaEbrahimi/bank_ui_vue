@@ -120,7 +120,7 @@ $auth-content-padding-t: 2.875rem;
 
 //$text-color:            $gray !default;
 
-$font-family-sans-serif : 'Source Sans Pro', sans-serif !default;
+$font-family-sans-serif :'IRANSans', 'Source Sans Pro', sans-serif !default;
 
 $font-size-root : 16px;
 
@@ -335,7 +335,7 @@ $tab-content-pt: 3.125rem;
 $tab-content-pb: 1.5rem;
 
 //PreLoader
-$vuestic-preloader-left: calc(50% - 140px/2);
+$vuestic-preloader-left: calc(40% - 70px/2);
 $vuestic-preloader-top: calc(50% - 104px/2);
 
 //Medium Editor

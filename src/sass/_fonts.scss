@@ -11,6 +11,25 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'IRANSans';
+  src: url('#{$icon-font-path}/eot/IRANSansWeb.eot');
+  src: url('#{$icon-font-path}eot/IRANSansWeb.eot?#iefix') format('embedded-opentype'),
+  url('#{$icon-font-path}/woff/IRANSansWeb.woff') format('woff'),
+  url('#{$icon-font-path}/ttf/IRANSansWeb.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'IRANSans_Light';
+  src: url('#{$icon-font-path}/eot/IRANSansWeb_Light.eot');
+  src: url('#{$icon-font-path}eot/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'),
+  url('#{$icon-font-path}/woff/IRANSansWeb_Light.woff') format('woff'),
+  url('#{$icon-font-path}/ttf/IRANSansWeb_Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 .vuestic-icon {
   line-height: 1;

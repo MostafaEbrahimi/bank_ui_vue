@@ -1,6 +1,6 @@
 <template>
   <div class="table-responsive">
-    <div class="d-flex flex-md-row flex-column justify-content-md-between align-items-center">
+    <div  class="d-flex flex-md-row flex-column justify-content-md-between align-items-center">
       <filter-bar @filter="onFilterSet"></filter-bar>
       <items-per-page :options="itemsPerPage"
                       :defaultPerPage="perPage"
@@ -20,7 +20,7 @@
               :perPage="perPage"
               @vuetable:pagination-data="onPaginationData">
     </vuetable>
-    <div class="d-flex justify-content-center mb-4">
+    <div style="direction:ltr" class="d-flex justify-content-center mb-4">
       <vuetable-pagination ref="pagination"
                            :css="css.pagination"
                            :onEachSide="onEachSide"
