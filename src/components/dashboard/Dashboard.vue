@@ -13,17 +13,17 @@
     <dashboard-info-widgets></dashboard-info-widgets>
 
     <vuestic-widget class="no-padding no-v-padding">
-      <vuestic-tabs :names="[$t('dashboard.dataVisualization'), $t('dashboard.usersAndMembers'), $t('dashboard.setupProfile'), $t('dashboard.features')]" ref="tabs">
-        <div :slot="$t('dashboard.dataVisualization')">
-          <data-visualisation-tab></data-visualisation-tab>
+      <vuestic-tabs :names="[$t('dashboard.hesabhayeriali'), $t('dashboard.tashilat'), $t('dashboard.arziaccounts'), $t('dashboard.modiriatvajh')]" ref="tabs">
+        <div :slot="$t('dashboard.hesabhayeriali')">
+          <rial-accounts></rial-accounts>
         </div>
-        <div :slot="$t('dashboard.usersAndMembers')">
+        <div :slot="$t('dashboard.tashilat')">
           <users-members-tab></users-members-tab>
         </div>
-        <div :slot="$t('dashboard.setupProfile')">
+        <div :slot="$t('dashboard.arziaccounts')">
           <setup-profile-tab></setup-profile-tab>
         </div>
-        <div :slot="$t('dashboard.features')">
+        <div :slot="$t('dashboard.modiriatvajh')">
           <features-tab></features-tab>
         </div>
       </vuestic-tabs>
@@ -40,6 +40,7 @@
   import SetupProfileTab from './setup-profile-tab/SetupProfileTab.vue'
   import FeaturesTab from './features-tab/FeaturesTab.vue'
   import DataVisualisationTab from './data-visualisation-tab/DataVisualisation.vue'
+  import RialAccounts from './rial-accounts/RialAccounts'
   import DashboardBottomWidgets from './DashboardBottomWidgets.vue'
 
   export default {
@@ -50,6 +51,7 @@
       UsersMembersTab,
       SetupProfileTab,
       FeaturesTab,
+      RialAccounts,
       DashboardBottomWidgets
     }
   }

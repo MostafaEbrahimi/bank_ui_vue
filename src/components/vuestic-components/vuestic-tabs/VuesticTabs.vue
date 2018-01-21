@@ -25,7 +25,7 @@
     props: ['names'],
     computed: {
       underscoreClass () {
-        return 'underscore-' + this.names.length + '-' + this.names.indexOf(this.currentActive)
+        return 'underscore-' + this.names.length + '-' + ((this.names.length - 1) - this.names.indexOf(this.currentActive))
       }
     },
     methods: {

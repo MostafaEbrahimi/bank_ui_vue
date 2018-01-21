@@ -7,13 +7,18 @@
     </div>
 
     <div class="row navbar-container">
-
+      
       <div class="menu-icon-container d-flex align-items-center justify-content-center justify-content-lg-start col">
         <a class="menu-icon i-menu-expanded" href="#" @click.prevent="toggleSidebar(false)" v-if="sidebarOpened"></a>
         <a class="menu-icon i-menu-collapsed" href="#" @click.prevent="toggleSidebar(true)" v-else></a>
       </div>
 
-      <div class="offset-lg-8"></div>
+      <div class="offset-lg-6"></div>
+      <div class="col-lg-2" >
+        <div class="col nav-item d-flex align-items-center justify-content-center">
+          <Clock :blink="true" />
+        </div>
+      </div>
       <div class="col nav-item dropdown navbar-dropdown d-flex align-items-center justify-content-center" v-dropdown>
         <a class="nav-link dropdown-toggle d-flex align-items-center justify-content" href="#" @click.prevent="closeMenu">
           <span class="i-nav-messages notify"></span>
@@ -99,6 +104,7 @@
   import Vue from 'vue'
   import { mapGetters, mapActions } from 'vuex'
   import Dropdown from 'directives/Dropdown'
+  import Clock from 'vue-digital-clock'
 
   export default {
     name: 'navbar',
@@ -106,7 +112,9 @@
     directives: {
       dropdown: Dropdown
     },
-
+    components: {
+      Clock
+    },
     computed: {
       ...mapGetters([
         'sidebarOpened',
@@ -145,6 +153,11 @@
       width: 100%;
       height: 100%;
       margin: 0;
+    }
+
+    .clock{
+      font-size:24px;
+      color:white;
     }
 
     height: $top-nav-height;

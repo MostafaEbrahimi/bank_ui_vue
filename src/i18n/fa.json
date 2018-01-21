@@ -38,7 +38,11 @@
       "setupProfile": "ساخت پروفایل",
       "teamMembers": "اعضای تیم",
       "usersAndMembers": "کاربران و اعضا",
-      "versions": "ورژن"
+      "versions": "ورژن",
+      "hesabhayeriali":"حساب‌های ریالی",
+      "tashilat":"تسهیلات ارزی",
+      "arziaccounts":"حساب‌های ارزی",
+      "modiriatvajh":"مدیریت وجه"
     },
     "extra": {
       "alerts": {
