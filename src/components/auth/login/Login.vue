@@ -4,21 +4,21 @@
     <form method="post" action="/auth/login" name="login">
       <div class="form-group">
         <div class="input-group">
-          <input type="text" id="email" required="required"/>
-          <label class="control-label" for="email">{{'auth.email' | translate}}</label><i class="bar"></i>
+          <input type="text" v-model="login.username" id="username" required="required"/>
+          <label class="control-label" for="username">{{'auth.username' | translate}}</label><i class="bar"></i>
         </div>
       </div>
       <div class="form-group">
         <div class="input-group">
-          <input type="password" id="password" required="required"/>
+          <input type="password" v-model="login.password" id="password" required="required"/>
           <label class="control-label" for="password">{{'auth.password' | translate}}</label><i class="bar"></i>
         </div>
       </div>
       <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between down-container">
-        <button class="btn btn-primary" type="submit">
+        <button class="btn btn-primary" @click.prevent="postLogin" type="submit">
           {{'auth.login' | translate}}
         </button>
-        <router-link class='link' :to="{name: 'Signup'}">{{'auth.createAccount' | translate}}</router-link>
+        <!-- <router-link class='link' :to="{name: 'Signup'}">{{'auth.createAccount' | translate}}</router-link> -->
       </div>
     </form>
   </div>
@@ -26,7 +26,36 @@
 
 <script>
   export default {
-    name: 'login'
+    name: 'login',
+    data () {
+      return {
+        login: {
+          username: '',
+          password: ''
+        }
+      }
+    },
+    methods: {
+      postLogin: function () {
+        this.$http.post('http://localhost:8080', this.login).then(response => {
+          console.log(response)
+          if (response.ok) {
+            this.$localStorage.set('auth_key', 123)
+            this.$localStorage.set('isadmin', true)
+            this.$router.push('/dashboard')
+          }
+          // this.$localStorage.get('auth_key', undefined)
+        }, errorResponse => {
+          console.log(errorResponse)
+          this.$localStorage.set('auth_key', undefined)
+          this.$localStorage.set('isadmin', false)
+          // this.$localStorage.set('isadmin', true)// must be deleted
+          // this.$router.push('/admin')// must be deleted
+        })
+      }
+    },
+    computed: {
+    }
   }
 </script>
 

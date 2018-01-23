@@ -6,6 +6,8 @@ import App from './App'
 import store from './store'
 import router from './router'
 import { sync } from 'vuex-router-sync'
+import VueResource from 'vue-resource'
+import VueLocalStorage from 'vue-localstorage'
 import VuesticPlugin from 'src/components/vuestic-components/vuestic-components-plugin'
 import './i18n'
 
@@ -13,6 +15,12 @@ Vue.use(VuesticPlugin)
 
 // NOTE: workaround for VeeValidate + vuetable-2
 Vue.use(VeeValidate, {fieldsBagName: 'formFields'})
+Vue.use(VueResource)
+Vue.use(VueLocalStorage)
+
+Vue.filter('slice', function (value) {
+  return value.slice(0, 8)
+})
 
 sync(store, router)
 

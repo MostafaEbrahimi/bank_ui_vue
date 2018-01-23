@@ -10,7 +10,7 @@
       </div>
     </div>
 
-    <dashboard-info-widgets></dashboard-info-widgets>
+    <!-- <dashboard-info-widgets></dashboard-info-widgets> -->
 
     <vuestic-widget class="no-padding no-v-padding">
       <vuestic-tabs :names="[$t('dashboard.hesabhayeriali'), $t('dashboard.tashilat'), $t('dashboard.arziaccounts'), $t('dashboard.modiriatvajh')]" ref="tabs">
@@ -29,7 +29,7 @@
       </vuestic-tabs>
     </vuestic-widget>
 
-    <dashboard-bottom-widgets></dashboard-bottom-widgets>
+    <!-- <dashboard-bottom-widgets></dashboard-bottom-widgets> -->
 
   </div>
 </template>

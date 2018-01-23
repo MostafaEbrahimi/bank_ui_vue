@@ -26,7 +26,7 @@
   import Navbar from './navbar/Navbar'
   import Sidebar from './sidebar/Sidebar'
   import Resize from 'directives/ResizeHandler'
-  
+
 
   export default {
     name: 'layout',
@@ -54,7 +54,11 @@
     },
     data () {
       return {
+        isAdmin: false
       }
+    },
+    created: function () {
+      this.isAdmin = this.$localStorage.get('isadmin', false)
     }
   }
 </script>

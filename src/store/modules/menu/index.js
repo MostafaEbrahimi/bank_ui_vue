@@ -3,23 +3,38 @@ import statistics from './statistics'
 import forms from './forms'
 import dashboard from './dashboard'
 import ui from './ui'
-import maps from './maps'
+// import maps from './maps'
 import tables from './tables'
 import auth from './auth'
+import admin from './admin'
 import extra from './extra'
+import VueLocalStorage from 'vue-localstorage'
+import Vue from 'vue'
 
-const state = {
+Vue.use(VueLocalStorage)
+let isadmin = Vue.localStorage.get('isadmin', false)
+
+let state1 = {
   items: [
-    dashboard,
-    statistics,
-    forms,
-    tables,
-    ui,
-    extra,
-    auth,
-    maps
+    admin
   ]
 }
+
+if (!isadmin) {
+  state1 = {
+    items: [
+      dashboard,
+      statistics,
+      forms,
+      tables,
+      ui,
+      extra,
+      auth
+    ]
+  }
+}
+const state = state1
+
 
 const mutations = {
   [types.TOGGLE_EXPAND_MENU_ITEM] (state, payload) {

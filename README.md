@@ -1,4 +1,4 @@
-# Vuestic Admin Dashboard
+# RTL Bank Vuestic Admin Dashboard
 
 Responsive admin dashboard template built with [Vue.js](https://vuejs.org) and [Bootstrap 4](https://v4-alpha.getbootstrap.com). Developed by [Epicmax](http://epicmax.co). Designed by [Vasili Savitski](https://xxsavitski.myportfolio.com/)
 

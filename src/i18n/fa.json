@@ -42,7 +42,8 @@
       "hesabhayeriali":"حساب‌های ریالی",
       "tashilat":"تسهیلات ارزی",
       "arziaccounts":"حساب‌های ارزی",
-      "modiriatvajh":"مدیریت وجه"
+      "modiriatvajh":"مدیریت وجه",
+      "select":"انتخاب"
     },
     "extra": {
       "alerts": {
@@ -135,6 +136,7 @@
     "menu": {
       "auth": "احراز حویت",
       "buttons": "کلیدها",
+      "username": "نام کاربری",
       "charts": "نمودارها",
       "dashboard": "داشبورد",
       "extra": "اضافی",
@@ -203,9 +205,38 @@
       }
     },
     "user": {
+      "clock_text":"ساعت",
       "language": "تغییر زبان",
       "logout": "خروج",
       "profile": "پروفایل من"
+    },
+    "modiriat_hesab": {
+      "modiriat_hesab":"مدیریت حساب",
+      "khadamat_enteghal_vajh":"انتقال وجه",
+      "khadamat_sharj":"خدمات شارژ",
+      "khadamat_chequ":"خدمات چک",
+      "modiriat_cart":"مدیریت کارت",
+      "modiriat_emza":"مدیریت امضا",
+      "cart_sookht":"کارت سوخت",
+      "oragh_bahadar":"اوراق بهادار"
+    },
+    "admin": {
+      "customers":"مشتریان",
+      "customer": {
+        "firstname":"نام",
+        "lastname":"نام خانوادگی",
+        "nationalid":"کد ملی",
+        "email":"ایمیل",
+        "address":"آدرس",
+        "birthdaydate":"تاریخ تولد",
+        "sex":"جنسیت"
+      },
+      "admin":"مدیریت",
+      "customers":"مشتری‌ها",
+      "add":"اضافه کردن",
+      "search_customer_national_id":"جستجوی مشتری با کد ملی"
+    },
+    "errors":{
+      "problem_in_network_communication":"مشکلی در برقراری ارتباط"
     }
   }
-  

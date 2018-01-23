@@ -93,9 +93,10 @@
           text-align: center;
           margin: .5rem .25rem;
           min-height: 3rem;
-          color: $white;
-          background-color: $brand-primary;
+          color: $almost-black;
+          background-color: $white;
           border-radius: 0.5rem;
+          box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         }
       }
     }

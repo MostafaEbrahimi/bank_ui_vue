@@ -7,7 +7,7 @@
     </div>
 
     <div class="row navbar-container">
-      
+
       <div class="menu-icon-container d-flex align-items-center justify-content-center justify-content-lg-start col">
         <a class="menu-icon i-menu-expanded" href="#" @click.prevent="toggleSidebar(false)" v-if="sidebarOpened"></a>
         <a class="menu-icon i-menu-collapsed" href="#" @click.prevent="toggleSidebar(true)" v-else></a>
@@ -16,6 +16,7 @@
       <div class="offset-lg-6"></div>
       <div class="col-lg-2" >
         <div class="col nav-item d-flex align-items-center justify-content-center">
+          <div class="clock-text">{{"user.clock_text" | translate}}</div>
           <Clock :blink="true" />
         </div>
       </div>
@@ -137,6 +138,18 @@
         Vue.i18n.set(locale)
         this.$refs.languageModal.cancel()
       }
+    },
+    data () {
+      return {
+        isAdmin: false
+      }
+    },
+    created: function () {
+      // this.isAdmin = this.$localStorage.get('isadmin', false)
+      // if (this.isAdmin) {
+      //   this.$store.dispatch('closeMenu')
+      //   this.$store.dispatch('toggleSidebar')
+      // }
     }
   }
 </script>
@@ -155,6 +168,11 @@
       margin: 0;
     }
 
+    .clock-text{
+      font-size:24px;
+      color:white;
+      margin-left:10px;
+    }
     .clock{
       font-size:24px;
       color:white;

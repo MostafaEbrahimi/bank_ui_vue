@@ -37,6 +37,7 @@
     "vue-bulma-expanding": "0.0.1",
     "vue-chartjs": "^2.8.1",
     "vue-digital-clock": "^1.5.0",
+    "vue-localstorage": "^0.6.1",
     "vue-router": "^3.0.1",
     "vue-slider-component": "2.3.3",
     "vue2-circle-progress": "^1.0.3",
