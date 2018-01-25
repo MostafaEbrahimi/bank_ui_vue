@@ -250,5 +250,25 @@
       "problem_in_network_communication":"مشکلی در برقراری ارتباط",
       "success_on_submit_data":"مشتری جدید با موفقیت ثبت شد",
       "error_on_submit_data":"مشکلی در ثبت کاربر جدید.لطفا اتصال خود به اینترنت و ورودی‌های خود را کنترل کنید"
+    },
+    "account":{
+      "doTransaction":"انجام عملیات",
+      "account":"حساب",
+      "selectaccount":{
+        "title":"انتخاب حساب"
+      },
+      "enteghalvajh":{
+        "successMessage":"انتقال وجه با موفقیت انجام گرفت",
+        "title":"انتقال وجه",
+        "sourceAccount":"ارسال کننده",
+        "destinAccount":"دریاف کننده",
+        "priceValue":"مبلغ انتقال"
+      },
+      "khadamatsharj":{
+        "title":"خدمات شارژ"
+      },
+      "please_select_account":"لطفا یک حساب انتخاب کنید ",
+      "hesabhayeriali":"حساب‌های ریالی"
+
     }
   }

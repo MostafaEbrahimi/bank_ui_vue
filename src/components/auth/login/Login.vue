@@ -37,30 +37,31 @@
     },
     methods: {
       postLogin: function () {
-        this.$http.post('http://localhost:8080', this.login).then(response => {
+        this.$http.post('http://localhost:8091/auth', this.login).then(response => {
           console.log(response)
           if (response.ok) {
-            this.$localStorage.set('auth_key', 123)
-            this.$localStorage.set('role', 'admin')
-            // this.$localStorage.set('role', 'customer')
-            // this.$localStorage.set('role', 'employee')
-
+            if (response.body.role === 'ROLE_ADMIN') {
+              this.$localStorage.set('role', 'admin')
+            } else if (response.body.role === 'ROLE_STUFF') {
+              this.$localStorage.set('role', 'employee')
+            } else if (response.body.role === 'ROLE_USER') {
+              this.$localStorage.set('role', 'customer')
+            }
+            this.$localStorage.set('token_key', response.body.token)
             this.$localStorage.set('login', 'true')
-            this.$forceUpdate()
             this.$router.push('/dashboard')
+            this.$forceUpdate()
+          } else {
+            this.$localStorage.set('login', 'false')
+            this.$localStorage.set('token_key', undefined)
+            this.$localStorage.set('login', 'false')
           }
-          this.$localStorage.set('login', 'false')
-          // this.$localStorage.get('auth_key', undefined)
         }, errorResponse => {
           console.log(errorResponse)
-          this.$localStorage.set('auth_key', undefined)
           this.$localStorage.set('login', 'false')
-          // this.$localStorage.set('role', 'admin')
-          // this.$localStorage.set('role', 'customer')
-          this.$localStorage.set('role', 'employee')
+          this.$localStorage.set('token_key', undefined)
+          this.$localStorage.set('login', 'false')
           this.$forceUpdate()
-          console.log('error')
-          this.$router.push('/')
           // this.$localStorage.set('isadmin', true)// must be deleted
           // this.$router.push('/admin')// must be deleted
         })

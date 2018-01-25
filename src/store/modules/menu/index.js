@@ -8,6 +8,7 @@ import tables from './tables'
 // import auth from './auth'
 import admin from './admin'
 import employe from './employe'
+import hesabhayeriali from './hesabhayeriali'
 import extra from './extra'
 import VueLocalStorage from 'vue-localstorage'
 import Vue from 'vue'
@@ -19,6 +20,7 @@ var state1 = []
 if (role === 'customer') {
   state1 = {
     items: [
+      hesabhayeriali,
       dashboard,
       statistics,
       forms,
