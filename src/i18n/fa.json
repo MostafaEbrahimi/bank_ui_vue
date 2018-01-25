@@ -234,9 +234,21 @@
       "admin":"مدیریت",
       "customers":"مشتری‌ها",
       "add":"اضافه کردن",
-      "search_customer_national_id":"جستجوی مشتری با کد ملی"
+      "search_customer_national_id":"جستجوی مشتری با کد ملی",
+      "register_new_customer":"ثبت مشتری جدید"
+    },
+    "employee":{
+      "employee":"کارمند",
+      "request":"درخواست",
+      "request_type":"نوع درخواست",
+      "owner":"درخواست دهنده",
+      "request_date":"تاریخ درخواست",
+      "reject":"رد",
+      "accept":"تایید"
     },
     "errors":{
-      "problem_in_network_communication":"مشکلی در برقراری ارتباط"
+      "problem_in_network_communication":"مشکلی در برقراری ارتباط",
+      "success_on_submit_data":"مشتری جدید با موفقیت ثبت شد",
+      "error_on_submit_data":"مشکلی در ثبت کاربر جدید.لطفا اتصال خود به اینترنت و ورودی‌های خود را کنترل کنید"
     }
   }

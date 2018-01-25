@@ -41,14 +41,26 @@
           console.log(response)
           if (response.ok) {
             this.$localStorage.set('auth_key', 123)
-            this.$localStorage.set('isadmin', true)
+            this.$localStorage.set('role', 'admin')
+            // this.$localStorage.set('role', 'customer')
+            // this.$localStorage.set('role', 'employee')
+
+            this.$localStorage.set('login', 'true')
+            this.$forceUpdate()
             this.$router.push('/dashboard')
           }
+          this.$localStorage.set('login', 'false')
           // this.$localStorage.get('auth_key', undefined)
         }, errorResponse => {
           console.log(errorResponse)
           this.$localStorage.set('auth_key', undefined)
-          this.$localStorage.set('isadmin', false)
+          this.$localStorage.set('login', 'false')
+          // this.$localStorage.set('role', 'admin')
+          // this.$localStorage.set('role', 'customer')
+          this.$localStorage.set('role', 'employee')
+          this.$forceUpdate()
+          console.log('error')
+          this.$router.push('/')
           // this.$localStorage.set('isadmin', true)// must be deleted
           // this.$router.push('/admin')// must be deleted
         })

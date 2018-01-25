@@ -5,22 +5,18 @@ import dashboard from './dashboard'
 import ui from './ui'
 // import maps from './maps'
 import tables from './tables'
-import auth from './auth'
+// import auth from './auth'
 import admin from './admin'
+import employe from './employe'
 import extra from './extra'
 import VueLocalStorage from 'vue-localstorage'
 import Vue from 'vue'
 
 Vue.use(VueLocalStorage)
-let isadmin = Vue.localStorage.get('isadmin', false)
-
-let state1 = {
-  items: [
-    admin
-  ]
-}
-
-if (!isadmin) {
+let role = Vue.localStorage.get('role', 'admin')
+console.log(role)
+var state1 = []
+if (role === 'customer') {
   state1 = {
     items: [
       dashboard,
@@ -28,8 +24,19 @@ if (!isadmin) {
       forms,
       tables,
       ui,
-      extra,
-      auth
+      extra
+    ]
+  }
+} else if (role === 'admin') {
+  state1 = {
+    items: [
+      admin
+    ]
+  }
+} else if (role === 'employee') {
+  state1 = {
+    items: [
+      employe
     ]
   }
 }

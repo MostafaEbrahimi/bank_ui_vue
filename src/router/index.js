@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import menuModule from 'vuex-store/modules/menu'
+import Login from '../components/auth/login/Login'
 
 Vue.use(Router)
 
@@ -22,6 +23,7 @@ function generateRoutesFromMenu (menu = [], routes = []) {
       generateRoutesFromMenu(item.children, routes)
     }
   }
+  routes.push({path: '/auth/login', component: Login})
   return routes
 }
 
