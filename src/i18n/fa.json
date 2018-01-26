@@ -302,6 +302,9 @@
         "variz":"واریز",
         "updateAccountFlow":"به روزرسانی گردش حساب"
       },
+      "cartRequest":{
+        "title":"درخواست صدور کارت"
+      },
       "please_select_account":"لطفا یک حساب انتخاب کنید ",
       "hesabhayeriali":"حساب‌های ریالی"
     }

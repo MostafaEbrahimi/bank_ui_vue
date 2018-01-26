@@ -60,6 +60,16 @@ export default {
         title: 'account.checksstatus.title',
         newWindow: false
       }
+    },
+    {
+      name: 'cartrequest',
+      path: '/hesabhayeriali/cartrequest',
+      component: lazyLoading('hesabhayeriali/CartRequest'),
+      meta: {
+        default: false,
+        title: 'account.cartRequest.title',
+        newWindow: false
+      }
     }
   ]
 }
