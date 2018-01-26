@@ -264,11 +264,28 @@
         "destinAccount":"دریاف کننده",
         "priceValue":"مبلغ انتقال"
       },
-      "khadamatsharj":{
-        "title":"خدمات شارژ"
+      "darkhastcheque":{
+        "title":"درخواست چک",
+        "nameOfOwner":"نام درخواست دهنده",
+        "successMessage":"درخواست شما با موفقیت ارسال شد",
+        "chechbookCount":"تعداد برگ"
+      },
+      "branch":{
+        "selectTitle":"انتخاب شعبه",
+        "title":"شعبه"
+
+      },
+      "accountFlow":{
+        "title":"گردش حساب",
+        "accountFlowType":"نوع تراکنش",
+        "date":"تاریخ",
+        "amount":"وجه",
+        "payOrNot":"برداشت یا واریز",
+        "bardasht":"برداشت",
+        "variz":"واریز",
+        "updateAccountFlow":"به روزرسانی گردش حساب"
       },
       "please_select_account":"لطفا یک حساب انتخاب کنید ",
       "hesabhayeriali":"حساب‌های ریالی"
-
     }
   }

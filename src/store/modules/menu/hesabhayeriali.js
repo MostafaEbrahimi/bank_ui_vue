@@ -22,12 +22,22 @@ export default {
       }
     },
     {
-      name: 'khadamatsharj',
-      path: '/hesabhayeriali/khadamatsharj',
-      component: lazyLoading('hesabhayeriali/KhadamatSharj'),
+      name: 'darkhastcheque',
+      path: '/hesabhayeriali/darkhastcheque',
+      component: lazyLoading('hesabhayeriali/DarkhastCheque'),
       meta: {
         default: false,
-        title: 'account.khadamatsharj.title',
+        title: 'account.darkhastcheque.title',
+        newWindow: false
+      }
+    },
+    {
+      name: 'accountflow',
+      path: '/hesabhayeriali/accountflow',
+      component: lazyLoading('hesabhayeriali/AccountFlow'),
+      meta: {
+        default: false,
+        title: 'account.accountFlow.title',
         newWindow: false
       }
     }
