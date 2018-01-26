@@ -22,8 +22,8 @@
                       </thead>
                       <tbody>
                           <tr v-for="flow in accountFlows">
-                              <td>{{ flow.accountFlowType  }}</td>
-                              <td>{{ toDateTime(flow.date)  }}</td>
+                              <td>{{ getAccountFlowTypePersian(flow.accountFlowType)  }}</td>
+                              <td>{{ toDateTime(flow.date) | moment("DD-MM")  }}</td>
                               <td>{{ flow.amount  }}</td>
                               <td>{{ getPaymentOrBuy(flow.payOrNot)  }}</td>
                           </tr>
@@ -68,6 +68,26 @@ export default {
         console.log(error)
       })
     },
+    getAccountFlowTypePersian (type) {
+      switch (type) {
+        case 'HAVALE_VARIZ':
+          return 'حواله خرید'
+        case 'HAVALE_BARDASHT':
+          return 'حواله برداشت'
+        case 'PAYBILL':
+          return 'پرداخت قبض'
+        case 'KHARID_INTERNET':
+          return 'خرید اینترنتی'
+        case 'KHARID_POZ':
+          return 'خرید پوز'
+        case 'VARIZ_NAGHD':
+          return 'برداشت وجه نقد'
+        case 'PASS_CHECK':
+          return 'پرداخت چکی'
+        case 'VARIZ_SOOD':
+          return 'واریز سود'
+      }
+    },
     selectedAccountEnableButton () {
       if (this.selectedAccount !== undefined) {
         this.enableRefreshButton = true
@@ -77,9 +97,9 @@ export default {
     },
     getPaymentOrBuy (payOrNotBoolean) {
       if (payOrNotBoolean) {
-        return this.$t('account.accountflow.bardasht')
+        return this.$t('account.accountFlow.bardasht')
       } else {
-        return this.$t('account.accountflow.variz')
+        return this.$t('account.accountFlow.variz')
       }
     },
     changeAccount (account) {
@@ -88,9 +108,9 @@ export default {
       console.log(this.selectAccount)
     },
     toDateTime (secs) {
-        var t = new Date(1970, 0, 1)
-        t.setSeconds(secs)
-        return t
+      var t = new Date(1970, 0, 1)
+      t.setSeconds(secs)
+      return t
     },
     submitDarkhastCheque () {
       this.$http.post('http://localhost:8091/customer/request/checkbook', this.requestAccountFlow, {
@@ -117,5 +137,6 @@ export default {
 </script>
 
 <style lang="scss">
+  @import "../../sass/_variables.scss";
 
 </style>

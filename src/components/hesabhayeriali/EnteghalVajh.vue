@@ -29,7 +29,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-4 justify-content-center" >
+          <div class=" justify-content-center" >
             <button href="#" @click.prevent="submitEnteghalVajh" class="btn btn-primary">
               {{'account.doTransaction' | translate}}
             </button>

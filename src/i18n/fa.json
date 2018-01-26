@@ -275,6 +275,23 @@
         "title":"شعبه"
 
       },
+      "accountinfo":{
+        "title":"اطلاعات حساب",
+        "shomarehesab":"شماره حساب",
+        "mandehesab":"مانده حساب",
+        "startdate":"تاریخ افتتحاح حساب",
+        "accountTypeIndivisual":"حساب گروهی یا فردی",
+        "accountTypeReal":"حقیقی یا حقوقی",
+        "accountType":"نوع حساب"
+      },
+      "checksstatus":{
+        "title":"وضعیت چک‌ها",
+        "dasteCheckId":"شماره دسته چک",
+        "checkId":"شماره چک",
+        "type":"وضعیت",
+        "cash":"مبلغ",
+        "toName":"در وجه"
+      },
       "accountFlow":{
         "title":"گردش حساب",
         "accountFlowType":"نوع تراکنش",

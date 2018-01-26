@@ -12,11 +12,21 @@ export default {
   },
   children: [
     {
+      name: 'accountinfo',
+      path: '/hesabhayeriali/accountinfo',
+      component: lazyLoading('hesabhayeriali/AccountInfo'),
+      meta: {
+        default: true,
+        title: 'account.accountinfo.title',
+        newWindow: false
+      }
+    },
+    {
       name: 'enteghalvajh',
       path: '/hesabhayeriali/enteghalvajh',
       component: lazyLoading('hesabhayeriali/EnteghalVajh'),
       meta: {
-        default: true,
+        default: false,
         title: 'account.enteghalvajh.title',
         newWindow: false
       }
@@ -38,6 +48,16 @@ export default {
       meta: {
         default: false,
         title: 'account.accountFlow.title',
+        newWindow: false
+      }
+    },
+    {
+      name: 'checkstatus',
+      path: '/hesabhayeriali/checkstatus',
+      component: lazyLoading('hesabhayeriali/ChecksStatus'),
+      meta: {
+        default: false,
+        title: 'account.checksstatus.title',
         newWindow: false
       }
     }

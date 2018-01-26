@@ -8,8 +8,10 @@ import router from './router'
 import { sync } from 'vuex-router-sync'
 import VueResource from 'vue-resource'
 import VueLocalStorage from 'vue-localstorage'
+import VueMoment from 'vue-moment'
 import VuesticPlugin from 'src/components/vuestic-components/vuestic-components-plugin'
 import './i18n'
+
 
 Vue.use(VuesticPlugin)
 
@@ -17,6 +19,7 @@ Vue.use(VuesticPlugin)
 Vue.use(VeeValidate, {fieldsBagName: 'formFields'})
 Vue.use(VueResource)
 Vue.use(VueLocalStorage)
+Vue.use(VueMoment)
 
 Vue.filter('slice', function (value) {
   return value.slice(0, 8)
