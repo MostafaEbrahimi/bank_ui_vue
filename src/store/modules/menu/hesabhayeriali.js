@@ -70,6 +70,36 @@ export default {
         title: 'account.cartRequest.title',
         newWindow: false
       }
+    },
+    {
+      name: 'facility',
+      path: '/hesabhayeriali/requestfacility',
+      component: lazyLoading('hesabhayeriali/RequestFacility'),
+      meta: {
+        default: false,
+        title: 'account.facility.title',
+        newWindow: false
+      }
+    },
+    {
+      name: 'reportrequest',
+      path: '/hesabhayeriali/reportrequest',
+      component: lazyLoading('hesabhayeriali/ReportRequest'),
+      meta: {
+        default: false,
+        title: 'account.requestReport.title',
+        newWindow: false
+      }
+    },
+    {
+      name: 'incomereports',
+      path: '/hesabhayeriali/incomereports',
+      component: lazyLoading('hesabhayeriali/IncomeReport'),
+      meta: {
+        default: false,
+        title: 'account.incomeReport.title',
+        newWindow: false
+      }
     }
   ]
 }

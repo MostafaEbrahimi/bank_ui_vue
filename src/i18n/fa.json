@@ -305,6 +305,28 @@
       "cartRequest":{
         "title":"درخواست صدور کارت"
       },
+      "facility":{
+        "title":"تسهیلات",
+        "amount":"مبلغ"
+      },
+      "facility_type":{
+        "title":"نوع تسهیلات",
+        "selecttitle":"انتخاب تسهیلات"
+      },
+      "requestReport":{
+        "title":"گزارش درخواست‌ها",
+        "forWhy":"به موجب",
+        "type":"نوع درخواست",
+        "accountNumber":"شماره حساب",
+        "requestStatus":"وضعیت درخواست"
+      },
+      "incomeReport":{
+        "title":"گزارش سود",
+        "amount":"مبلغ واریزی",
+        "date":"تاریخ واریز",
+        "accountNumber":"شماره حساب",
+        "submit":"دریافت گزارش"
+      },
       "please_select_account":"لطفا یک حساب انتخاب کنید ",
       "hesabhayeriali":"حساب‌های ریالی"
     }

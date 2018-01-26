@@ -40,6 +40,8 @@
         this.$http.post('http://localhost:8091/auth', this.login).then(response => {
           console.log(response)
           if (response.ok) {
+            this.$localStorage.set('token_key', response.body.token)
+            this.$localStorage.set('login', 'true')
             if (response.body.role === 'ROLE_ADMIN') {
               this.$localStorage.set('role', 'admin')
             } else if (response.body.role === 'ROLE_STUFF') {
@@ -47,10 +49,13 @@
             } else if (response.body.role === 'ROLE_USER') {
               this.$localStorage.set('role', 'customer')
             }
-            this.$localStorage.set('token_key', response.body.token)
-            this.$localStorage.set('login', 'true')
-            this.$router.push('/dashboard')
-            this.$forceUpdate()
+            window.location.href = 'http://localhost:8080/'
+            // this.$router.push('http://localhost:8080/')
+            // this.$router.push({
+            //   path: '/',
+            //   force: true
+            // })
+            // this.$forceUpdate()
           } else {
             this.$localStorage.set('login', 'false')
             this.$localStorage.set('token_key', undefined)

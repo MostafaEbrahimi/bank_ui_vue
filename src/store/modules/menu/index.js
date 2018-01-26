@@ -1,15 +1,15 @@
 import * as types from '../../mutation-types'
-import statistics from './statistics'
-import forms from './forms'
-import dashboard from './dashboard'
-import ui from './ui'
+// import statistics from './statistics'
+// import forms from './forms'
+// import dashboard from './dashboard'
+// import ui from './ui'
 // import maps from './maps'
-import tables from './tables'
+// import tables from './tables'
 // import auth from './auth'
 import admin from './admin'
 import employe from './employe'
 import hesabhayeriali from './hesabhayeriali'
-import extra from './extra'
+// import extra from './extra'
 import VueLocalStorage from 'vue-localstorage'
 import Vue from 'vue'
 
@@ -20,13 +20,7 @@ var state1 = []
 if (role === 'customer') {
   state1 = {
     items: [
-      hesabhayeriali,
-      dashboard,
-      statistics,
-      forms,
-      tables,
-      ui,
-      extra
+      hesabhayeriali
     ]
   }
 } else if (role === 'admin') {
